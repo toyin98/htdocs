@@ -1,0 +1,461 @@
+/* this code makes rid of the default padding and margins when you start a wepage*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    margin-top: 250px;
+}
+
+h6 {
+    color: white;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+h2{
+    color: white;
+    font-family: Libre Baskerville, serif;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 480px
+}
+
+
+/* this code styles the image on the bio.html page makes it smaller but also to display flex when the page is made smaller*/
+
+.bio-img {
+
+    width: 250px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 280px;
+}
+
+p {
+    color: white;
+    display: flex;
+    text-align: center;
+    margin: 30px;
+}
+
+/* this css code below is the styling for my imgs in the collection.html, they allow the img to be in a in a grid form */
+
+.gall-container {
+    margin-left: 450px;
+    margin-top: 90px
+}
+
+.project {
+    display: grid;
+    width: 250px;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.project figure img {
+    width: 100%;
+    display: grid;
+    object-fit: cover;
+}
+
+/* this is the css code below that allows me to style my contact form on the contact*/
+
+form {
+    margin-top: 50px;
+    margin-left: 400px
+}
+
+.form-control {
+    width: 400px;
+    background: black;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid white;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+input {
+    height: 45px;
+}
+
+/* this code moves the all the contact form towards the middle*/
+
+form{
+    margin-left: 320px;
+}
+
+
+/* this code makes styles the submeit button but also make it transparent but because my webapage background is black ou wont be able to see this effect*/
+
+form .submit {
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+/* this code below styles thw hover on the submit btn when a user is pointed on it*/
+
+form .submit:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* this code below is the styling for my navigaton bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* this styles the "the collection" header in my logo */
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/* this spreads the nav links so thier is space between each one*/
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+/* this removes the list styling so all the links are on the same line*/
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* this code hides the burger when my webpage is in desktop view*/
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/*this code below makes when the screen resizes that everything in this style sections happens, this more ipads or tablets uses of my website*/
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+
+    .footer {
+        background-color: black;
+        position: relative;
+        height: 100px;
+        margin-top: 500px;
+        clear: both;
+    }
+
+    h6 {
+        font-size: 25px;
+        margin: 10px;
+
+    }
+
+    .main {
+        margin: 100px;
+        text-align: center;
+    }
+
+
+    p {
+        color: white;
+        display: flex;
+        text-align: center;
+        margin-left: 25px
+    }
+    
+    h2{
+      font-size: 25px;
+      margin: 10px;
+      margin-left: 120px;
+  
+}
+
+    .gall-container {
+        margin-left: 450px;
+        margin-top: 90px;
+    }
+
+    .project {
+        display: grid;
+        width: 250px;
+        text-decoration: none;
+        margin-bottom: 10px;
+
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .project figure img {
+        width: 100%;
+        display: grid;
+        object-fit: cover;
+    }
+}
+
+
+/* the code below allows my code tp responsive on moblie phone, so th code below styles all the webpages to work on a small screen. */
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+        
+    }
+
+    h6 {
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .main {
+        margin: 100px;
+        text-align: center;
+
+    }
+    
+    /*bio html*/
+
+    .bio-img {
+        margin-left: 80px;
+    }
+
+
+
+    p {
+        color: white;
+        display: flex;
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    h2 {
+        color: white;
+        font-family: Libre Baskerville, serif;
+        text-align: left;
+        margin-top: 100px;
+        font-size: 25px;
+        margin: 10px;
+        margin-left: 120px
+    }
+    
+    /*collection.html*/
+
+    .gall-container {
+        margin-left: 100px;
+    }
+
+    .gall-wrapper {
+        max-width: 768px;
+    }
+
+    .project {
+        display: grid;
+        width: 250px;
+        text-decoration: none;
+        margin-bottom: 10px;
+
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .project figure img {
+        width: 100%;
+        display: grid;
+        object-fit: cover;
+    }
+
+/*contact-form*/
+    form {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+/*nav-bar*/
+/* this code posistions the navigation bar on small screen for phones but also makes the nav-bar appear in as a slide out menu using the transititons*/    
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+    
+    /*this allows the burger to appear on smaller screens but also have a pointer when hovered over*/
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    /* footer css for smaller screen*/
+
+    .footer {
+        background-color: black;
+        position: relative;
+        height: 0px;
+        margin-top: 200px;
+        clear: both;
+    }
+
+}
+
+/* this code actives the transition making go from on screen to off screen when the burger is clicked*/
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+/* this allows the menu to slide in an out when you are in moblie view*/
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+
+/* this code makes the burger turn into an x when it has been clicked*/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* footer css*/
+
+.footer {
+    background-color: black;
+    position: relative;
+    height: 100px;
+    margin-top: 540px;
+    clear: both;
+}
+
+.footer-social-icons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-social-icons ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-social-icons ul li {
+    display: inline-block;
+    margin-right: 2px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+
+.footer-social-icons ul li a {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    text-shadow: 0px 0px 5px;
+}
+
+.footer-social-icons ul li a i {
+    line-height: 50px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
